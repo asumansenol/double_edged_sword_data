@@ -12,8 +12,8 @@ The paper introduces a novel machine learning-based approach for automated ident
 We used the TensorFlow framework to train a multi-class classifier. For each visited page, we generate an 88-dimensional feature vector and a label, which we fed to a neural network with two dense hidden layers containing 8 and 16 units. The output layer is mapped to the three classes, i.e., login, sign-up, and neither. We trained the model for 200 epochs using the cross-entropy loss function. The [notebook](https://github.com/asumansenol/double_edged_sword_data/blob/main/Signup%20Login%20Classifier%20-%20Model%20Trainig.ipynb) along with the required [data](https://github.com/asumansenol/double_edged_sword_data/tree/main/csvs) that we used to train our model made publicly available with this repository.
 
 
-# Auxiliary data
-The auxiliary data utilized in our analysis and model training comprises the following:
+# Data
+The data from the crawl (performed on August'23) will be made available soon. The auxiliary data utilized in our analysis and model training comprises the following:
 
 1. 2023_08_25_top_100k_crawl_res_df.csv: Contains information regarding the pages visited by our crawler, indicating whether they are login or signup pages.
 2. 2023_08_25_top_100k_fps.csv: Provides details about fingerprinting scripts found on each visited page, including fingerprinting type(canvas, font etc), domain, etc.
