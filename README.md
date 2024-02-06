@@ -1,8 +1,8 @@
-# The Double-Edged Sword: Identifying Authentication Pages and their Fingerprinting Behavior (WWW'24)
+# Login Signup Classifier - ML Model
 
-This repository contains **the data, notebooks and the [model output](https://github.com/asumansenol/double_edged_sword_data/tree/main/multiclass_classifier)** that we used in our paper [The Double-Edged Sword: Identifying Authentication Pages and their Fingerprinting Behavior](https://cosicdatabase.esat.kuleuven.be/backend/publications/files/conferencepaper/3756).
+This repository contains **the data, notebooks and the model output** that we used in our paper [The Double-Edged Sword: Identifying Authentication Pages and their Fingerprinting Behavior](https://cosicdatabase.esat.kuleuven.be/backend/publications/files/conferencepaper/3756).
 
-The paper introduces a novel machine learning-based approach for automated identification of authentication pages (i.e. login and signup pages) and measures the prevalence of fingerprinting scripts on those pages.
+The paper introduces a novel machine learning-based approach for automated identification of authentication pages (i.e. login and signup pages) and measures the prevalence of fingerprinting scripts on those pages. For a more detailed overview visit [the main repository](https://github.com/asumansenol/double_edged_sword_crawler/tree/main/).
 
 # ML Pipeline
 
