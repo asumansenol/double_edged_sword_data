@@ -2,14 +2,14 @@
 
 This repository contains **the data, notebooks and the model output** that we used in our paper [The Double-Edged Sword: Identifying Authentication Pages and their Fingerprinting Behavior](https://cosicdatabase.esat.kuleuven.be/backend/publications/files/conferencepaper/3756).
 
-The paper introduces a novel machine learning-based approach for automated identification of authentication pages (i.e. login and signup pages) and measures the prevalence of fingerprinting scripts on those pages. For a more detailed overview visit [the main repository](https://github.com/asumansenol/double_edged_sword_crawler/tree/main/).
+The paper introduces a novel machine learning-based approach for automated identification of authentication pages (i.e. login and signup pages) and measures the prevalence of fingerprinting scripts on those pages. For a more detailed overview visit [the main repository](https://github.com/asumansenol/double_edged_sword_crawler/tree/main/). Additionally, to explore the browser extension utilizing this ML model for identifying login and signup pages, you can visit the [corresponding repository](https://github.com/asumansenol/login_signup_detection_chrome_extension).
 
 # ML Pipeline
 
 ![ml_pipeline](https://github.com/asumansenol/double_edged_sword_data/assets/48864422/997f73bc-61c6-4935-8183-98a8e4922b9a)
 
 ## Model Training
-We used the TensorFlow framework to train a multi-class classifier. For each visited page, we generate an 88-dimensional feature vector and a label, which we fed to a neural network with two dense hidden layers containing 8 and 16 units. The output layer is mapped to the three classes, i.e., login, sign-up, and neither. We trained the model for 200 epochs using the cross-entropy loss function. The [notebook](https://github.com/asumansenol/double_edged_sword_data/blob/main/Signup%20Login%20Classifier%20-%20Model%20Trainig.ipynb) along with the required [data](https://github.com/asumansenol/double_edged_sword_data/tree/main/csvs) that we used to train our model made publicly available with this repository.
+We used the TensorFlow framework to train a multi-class classifier. For each visited page, we generate an 88-dimensional feature vector and a label, which we fed to a neural network with two hidden layers containing 8 and 16 units. The output layer is mapped to the three classes, i.e., login, sign-up, and neither. We trained the model for 200 epochs using the cross-entropy loss function. The [notebook](https://github.com/asumansenol/double_edged_sword_data/blob/main/Signup%20Login%20Classifier%20-%20Model%20Trainig.ipynb) along with the required [data](https://github.com/asumansenol/double_edged_sword_data/tree/main/csvs) that we used to train our model made publicly available with this repository.
 
 
 # Data
